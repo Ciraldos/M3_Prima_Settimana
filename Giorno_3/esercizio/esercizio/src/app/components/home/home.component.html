@@ -1,0 +1,26 @@
+<h1>Lista post usando array</h1>
+
+<div *ngIf="articleArr.length == 0" class="alert alert-info">
+  Caricamento in corso
+</div>
+
+<table class="table" *ngIf="articleArr.length > 0">
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>body</th>
+    <th>userId</th>
+    <th>tags</th>
+    <th>active</th>
+  </tr>
+
+  <tr *ngFor="let article of articleArr">
+    <td>{{ article.id }}</td>
+    <td>{{ article.title }}</td>
+    <td>{{ article.body }}</td>
+    <td>{{ article.userId }}</td>
+    <td>{{ article.tags }}</td>
+    <td>{{ article.active }}</td>
+  </tr>
+</table>
+<hr />

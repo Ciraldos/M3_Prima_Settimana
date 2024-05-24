@@ -1,0 +1,56 @@
+[
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://seeklogo.com/images/F/FIAT_2007-logo-D66246C2CB-seeklogo.com.png",
+        "model": "500L",
+        "modelImage": "https://immagini.alvolante.it/sites/default/files/styles/image_gallery_big/public/news_galleria/2012/04/fiat_500l_2012_03.jpg?itok=TJ_kX1mY",
+        "year": 2015,
+        "price": 7500,
+        "available": false
+    },
+    {
+        "brand": "Fiat",
+        "brandLogo": "https://seeklogo.com/images/F/FIAT_2007-logo-D66246C2CB-seeklogo.com.png",
+        "model": "500 Abarth",
+        "modelImage": "https://www.italpress.com/wp-content/uploads/2023/05/20230518_1846-696x464.jpg",
+        "year": 2010,
+        "price": 3500,
+        "available": true
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://seeklogo.com/images/F/ford-logo-CA98E97A2B-seeklogo.com.png",
+        "model": "Taurus",
+        "modelImage": "https://img.autobytel.com/chrome/colormatched_01/white/640/cc_2010frd018a_01_640/cc_2010frd018a_01_640_u6.jpg",
+        "year": 2009,
+        "price": 5200,
+        "available": false
+    },
+    {
+        "brand": "Ford",
+        "brandLogo": "https://seeklogo.com/images/F/ford-logo-CA98E97A2B-seeklogo.com.png",
+        "model": "Focus",
+        "modelImage": "https://images.hgmsites.net/sml/2014-ford-focus_100434303_s.jpg",
+        "year": 2014,
+        "price": 9700,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://seeklogo.com/images/A/Audi-logo-C9C1408988-seeklogo.com.png",
+        "model": "A3",
+        "modelImage": "https://crdms.images.consumerreports.org/c_lfill,w_563,q_auto,f_auto/prod/cars/cr/model-years/6627-2014-audi-a3",
+        "year": 2012,
+        "price": 4300,
+        "available": true
+    },
+    {
+        "brand": "Audi",
+        "brandLogo": "https://seeklogo.com/images/A/Audi-logo-C9C1408988-seeklogo.com.png",
+        "model": "Q7",
+        "modelImage": "https://www.motortrend.com/uploads/sites/11/2020/03/2020-Audi-Q7-in-motion-1.jpg?w=768&width=768&q=75&format=webp",
+        "year": 2020,
+        "price": 41700,
+        "available": false
+    }
+]

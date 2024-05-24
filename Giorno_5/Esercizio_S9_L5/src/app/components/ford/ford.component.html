@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center my-5">
+    <div class="col-12 col-md-6 d-flex justify-content-center my-3">
+      <img src="{{ foto }}" width="250px" alt="logo" />
+    </div>
+    <div class="col-12 col-md-6">
+      <h1>Le nostre Ford</h1>
+      <p>
+        Ford è sinonimo di affidabilità, prestazioni e versatilità. Con una
+        lunga storia di produzione di veicoli iconici e adattabili alle esigenze
+        moderne, Ford è un marchio che ispira fiducia e soddisfa una vasta gamma
+        di esigenze dei clienti. Dalle robuste pick-up ai veicoli familiari e
+        alle vetture ecologiche, ogni modello Ford offre un'esperienza di guida
+        sicura, confortevole e all'avanguardia, insieme a una straordinaria
+        rapporto qualità-prezzo.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <div
+      class="card col-5 shadow-lg p-1 mx-2 my-4"
+      [ngClass]="{
+        'bg-available': car.available,
+        'bg-unavailable': !car.available
+      }"
+      *ngFor="let car of cars"
+    >
+      <img
+        src="{{ car.modelImage }}"
+        class="card-img-top img-fluid"
+        alt="modelCar"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
+        <p class="card-text">Anno: {{ car.year }}</p>
+        <p class="card-text fst-italic fw-semibold">{{ car.price }} €</p>
+      </div>
+    </div>
+  </div>
+</div>

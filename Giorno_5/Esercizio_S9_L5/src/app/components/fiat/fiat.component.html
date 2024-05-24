@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center my-5">
+    <div class="col-12 col-md-6 d-flex justify-content-center my-3">
+      <img src="{{ foto }}" width="250px" alt="logo" />
+    </div>
+    <div class="col-12 col-md-6">
+      <h1>Le nostre Fiat</h1>
+      <p>
+        Fiat è un marchio automobilistico italiano con una lunga tradizione di
+        innovazione e design distintivo. Fondata nel 1899, Fiat ha prodotto una
+        vasta gamma di veicoli che vanno dalle compatte cittadine alle auto di
+        lusso, diventando sinonimo di affidabilità e stile italiano. La gamma di
+        modelli Fiat è conosciuta per la loro efficienza, praticità e
+        convenienza, ideali per chi cerca un'auto versatile e di qualità. Sia
+        che tu stia cercando una city car come la celebre Fiat 500, o un'auto
+        spaziosa come la Fiat Tipo, Fiat offre soluzioni per ogni esigenza di
+        guida. Scopri le nostre offerte su Fiat e trova il modello perfetto per
+        te!
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <div
+      class="card col-5 shadow-lg p-1 mx-2 my-4"
+      [ngClass]="{
+        'bg-available': car.available,
+        'bg-unavailable': !car.available
+      }"
+      *ngFor="let car of cars"
+    >
+      <img
+        src="{{ car.modelImage }}"
+        class="card-img-top img-fluid"
+        alt="modelCar"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
+        <p class="card-text">Anno: {{ car.year }}</p>
+        <p class="card-text fst-italic fw-semibold">{{ car.price }} €</p>
+      </div>
+    </div>
+  </div>
+</div>

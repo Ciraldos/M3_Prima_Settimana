@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row justify-content-center align-items-center my-5">
+    <div class="col-12 col-md-6 d-flex justify-content-center my-3">
+      <img src="{{ foto }}" width="250px" alt="logo" />
+    </div>
+    <div class="col-12 col-md-6">
+      <h1>Le nostre Audi</h1>
+      <p>
+        L'Audi rappresenta l'eccellenza nel design e nell'ingegneria
+        automobilistica tedesca. Con una ricca eredità di innovazione e
+        prestazioni, ogni modello Audi incarna l'equilibrio perfetto tra lusso,
+        tecnologia e dinamiche di guida avanzate. Dai veicoli sportivi alle
+        berline di lusso e ai SUV, le auto Audi offrono un'esperienza di guida
+        sorprendente e un'eleganza senza tempo.
+      </p>
+    </div>
+  </div>
+  <div class="row justify-content-center align-items-center">
+    <div
+      class="card col-5 shadow-lg p-1 mx-2 my-4"
+      [ngClass]="{
+        'bg-available': car.available,
+        'bg-unavailable': !car.available
+      }"
+      *ngFor="let car of cars"
+    >
+      <img
+        src="{{ car.modelImage }}"
+        class="card-img-top img-fluid"
+        alt="modelCar"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ car.brand }} {{ car.model }}</h5>
+        <p class="card-text">Anno: {{ car.year }}</p>
+        <p class="card-text fst-italic fw-semibold">{{ car.price }} €</p>
+      </div>
+    </div>
+  </div>
+</div>
